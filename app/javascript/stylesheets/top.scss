@@ -1,7 +1,7 @@
 .topPage {
   min-height: 93vh;
   padding-top: 30px;
-  background: #bababa;
+  background: #007bff3b;
   overflow-x: scroll;
   .listWrapper {
     display: flex;
@@ -13,6 +13,7 @@
       padding: 10px;
       margin-left: 20px;
       min-width: 250px;
+      border-radius: 15px;
       &:last-child {
         margin-right: 20px;
       }
@@ -38,6 +39,42 @@
           }
         }
       }
+    }
+  }
+}
+
+.cardWrapper {
+  overflow-y: scroll;
+  max-height: 76vh;
+
+  .cardDetail_link {
+    text-decoration: none;
+    color: #323232;
+  }
+
+  .card {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    &_title {
+      font-size: 20px;
+      text-align: center;
+    }
+    &_detail {
+      display: none;
+      &.is-exist {
+        display: block;
+        color: #999;
+        & > i {
+          display: block;
+        }
+      }
+    }
+  }
+  .addCard {
+    color: #8c8c8c;
+    &_link {
+      color: #8c8c8c;
     }
   }
 }
